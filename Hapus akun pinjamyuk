@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan Menghapus Akun PinjamYuk | Customer Service WhatsApp Resmi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #FF6B35;
+            --primary-dark: #E55A2B;
+            --secondary: #004E89;
+            --accent: #1A659E;
+            --success: #28A745;
+            --warning: #FFC107;
+            --danger: #DC3545;
+            --light: #F8F9FA;
+            --dark: #212529;
+            --gray: #6C757D;
+            --gradient-primary: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%);
+            --gradient-secondary: linear-gradient(135deg, #004E89 0%, #1A659E 100%);
+            --shadow-soft: 0 10px 40px rgba(0,0,0,0.1);
+            --shadow-hover: 0 20px 60px rgba(255,107,53,0.3);
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            overflow-x: hidden;
+        }
+
+        /* Animated Background */
+        .bg-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        .bg-animation span {
+            position: absolute;
+            display: block;
+            width: 20px;
+            height: 20px;
+            background: var(--primary);
+            animation: move 25s linear infinite;
+            bottom: -150px;
+            border-radius: 50%;
+        }
+
+        .bg-animation span:nth-child(1) { left: 25%; width: 80px; height: 80px; animation-delay: 0s; }
+        .bg-animation span:nth-child(2) { left: 10%; width: 20px; height: 20px; animation-delay: 2s; animation-duration: 12s; }
+        .bg-animation span:nth-child(3) { left: 70%; width: 20px; height: 20px; animation-delay: 4s; }
+        .bg-animation span:nth-child(4) { left: 40%; width: 60px; height: 60px; animation-delay: 0s; animation-duration: 18s; }
+        .bg-animation span:nth-child(5) { left: 65%; width: 20px; height: 20px; animation-delay: 0s; }
+        .bg-animation span:nth-child(6) { left: 75%; width: 110px; height: 110px; animation-delay: 3s; }
+        .bg-animation span:nth-child(7) { left: 35%; width: 150px; height: 150px; animation-delay: 7s; }
+        .bg-animation span:nth-child(8) { left: 50%; width: 25px; height: 25px; animation-delay: 15s; animation-duration: 45s; }
+        .bg-animation span:nth-child(9) { left: 20%; width: 15px; height: 15px; animation-delay: 2s; animation-duration: 35s; }
+        .bg-animation span:nth-child(10) { left: 85%; width: 150px; height: 150px; animation-delay: 0s; animation-duration: 11s; }
+
+        @keyframes move {
+            0% { transform: translateY(0) rotate(0deg); opacity: 1; border-radius: 0; }
+            100% { transform: translateY(-1000px) rotate(720deg); opacity: 0; border-radius: 50%; }
+        }
+
+        /* Header */
+        header {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 2rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .header-content {
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            backdrop-filter: blur(10px);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(255,255,255,0.3);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            opacity: 0.95;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Main Content */
+        main {
+            padding: 4rem 0;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        @media (min-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        /* Cards */
+        .card {
+            background: white;
+            border-radius: 24px;
+            padding: 2.5rem;
+            box-shadow: var(--shadow-soft);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--gradient-primary);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s ease;
+        }
+
+        .card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .card-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--gradient-primary);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 10px 30px rgba(255,107,53,0.3);
+        }
+
+        .card h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+
+        .card p {
+            color: var(--gray);
+            margin-bottom: 1.5rem;
+        }
+
+        /* Contact Hero */
+        .contact-hero {
+            background: var(--gradient-secondary);
+            color: white;
+            border-radius: 30px;
+            padding: 3rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,78,137,0.3);
+        }
+
+        .contact-hero::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: rotate 20s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 1rem;
+            background: #25D366;
+            color: white;
+            padding: 1.25rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.25rem;
+            margin: 1.5rem 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(37,211,102,0.4);
+            position: relative;
+            z-index: 1;
+            border: 3px solid transparent;
+        }
+
+        .whatsapp-btn:hover {
+            transform: scale(1.05) translateY(-3px);
+            box-shadow: 0 20px 40px rgba(37,211,102,0.5);
+            border-color: rgba(255,255,255,0.5);
+        }
+
+        .whatsapp-btn i {
+            font-size: 1.5rem;
+        }
+
+        .phone-number {
+            font-size: 2rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            margin-top: 0.5rem;
+            display: block;
+        }
+
+        /* Steps Section */
+        .steps {
+            background: white;
+            border-radius: 30px;
+            padding: 3rem;
+            margin-bottom: 3rem;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .steps h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2.5rem;
+            color: var(--dark);
+        }
+
+        .step-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .step-item {
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+            padding: 1.5rem;
+            background: var(--light);
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            border-left: 5px solid var(--primary);
+        }
+
+        .step-item:hover {
+            transform: translateX(10px);
+            background: white;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .step-number {
+            min-width: 50px;
+            height: 50px;
+            background: var(--gradient-primary);
+            color: white;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 1.25rem;
+            box-shadow: 0 5px 15px rgba(255,107,53,0.3);
+        }
+
+        .step-content h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--dark);
+        }
+
+        .step-content p {
+            color: var(--gray);
+            font-size: 0.95rem;
+        }
+
+        /* Alert Boxes */
+        .alert {
+            padding: 1.5rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+        }
+
+        .alert-success {
+            background: #d4edda;
+            border-left: 5px solid var(--success);
+            color: #155724;
+        }
+
+        .alert-warning {
+            background: #fff3cd;
+            border-left: 5px solid var(--warning);
+            color: #856404;
+        }
+
+        .alert-danger {
+            background: #f8d7da;
+            border-left: 5px solid var(--danger);
+            color: #721c24;
+        }
+
+        .alert i {
+            font-size: 1.5rem;
+            margin-top: 0.2rem;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background: white;
+            border-radius: 30px;
+            padding: 3rem;
+            margin-top: 3rem;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #e0e0e0;
+            padding: 1.5rem 0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            font-weight: 700;
+            font-size: 1.1rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--dark);
+            transition: color 0.3s;
+        }
+
+        .faq-question:hover {
+            color: var(--primary);
+        }
+
+        .faq-answer {
+            margin-top: 1rem;
+            color: var(--gray);
+            line-height: 1.8;
+            display: none;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .faq-answer.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .toggle-icon {
+            transition: transform 0.3s;
+        }
+
+        .toggle-icon.rotate {
+            transform: rotate(180deg);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 3rem 0;
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .disclaimer {
+            background: rgba(255,255,255,0.1);
+            padding: 1.5rem;
+            border-radius: 15px;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            line-height: 1.8;
+        }
+
+        .official-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255,255,255,0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            .subtitle { font-size: 1rem; }
+            .card { padding: 1.5rem; }
+            .contact-hero { padding: 2rem 1rem; }
+            .phone-number { font-size: 1.5rem; }
+            .whatsapp-btn { font-size: 1rem; padding: 1rem 2rem; }
+            .steps { padding: 2rem 1rem; }
+            .step-item { flex-direction: column; text-align: center; }
+        }
+
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            box-shadow: 0 5px 20px rgba(37,211,102,0.4);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            text-decoration: none;
+        }
+
+        .fab:hover {
+            transform: scale(1.1) rotate(10deg);
+            box-shadow: 0 8px 30px rgba(37,211,102,0.6);
+        }
+
+        .fab-tooltip {
+            position: fixed;
+            bottom: 100px;
+            right: 30px;
+            background: var(--dark);
+            color: white;
+            padding: 0.75rem 1.25rem;
+            border-radius: 10px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+            pointer-events: none;
+            z-index: 999;
+        }
+
+        .fab:hover + .fab-tooltip {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Scroll Animation */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="badge">
+                    <i class="fas fa-shield-alt"></i> Resmi & Terpercaya
+                </div>
+                <h1>Panduan Menghapus Akun<br>PinjamYuk</h1>
+                <p class="subtitle">
+                    Proses penghapusan akun yang cepat, aman, dan didampingi langsung oleh Customer Service profesional melalui WhatsApp
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <!-- Alert Important -->
+            <div class="alert alert-warning fade-in">
+                <i class="fas fa-exclamation-triangle"></i>
+                <div>
+                    <strong>Penting!</strong> PinjamYuk adalah platform peer-to-peer lending yang berizin dan diawasi oleh Otoritas Jasa Keuangan (OJK) Nomor KEP-2/D.05/2021. Pastikan Anda menghubungi channel resmi untuk keamanan data Anda.
+                </div>
+            </div>
+
+            <!-- Contact Hero -->
+            <div class="contact-hero fade-in">
+                <h2 style="font-size: 1.75rem; margin-bottom: 1rem; position: relative; z-index: 1;">
+                    <i class="fas fa-headset"></i> Hubungi Customer Service Resmi
+                </h2>
+                <p style="opacity: 0.9; margin-bottom: 1rem; position: relative; z-index: 1;">
+                    Dapatkan bantuan langsung dari tim profesional kami untuk penghapusan akun yang cepat dan aman
+                </p>
+                
+                <a href="https://wa.me/625122118288" class="whatsapp-btn" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>Chat WhatsApp Sekarang</span>
+                </a>
+                
+                <div class="phone-number">+62 51-2211-8288</div>
+                <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 1rem;">
+                    <i class="fas fa-clock"></i> Layanan tersedia 24 jam
+                </p>
+            </div>
+
+            <!-- Steps Section -->
+            <div class="steps fade-in">
+                <h2><i class="fas fa-list-ol" style="color: var(--primary);"></i> Langkah-Langkah Penghapusan Akun</h2>
+                
+                <div class="step-list">
+                    <div class="step-item">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Siapkan Data Diri</h3>
+                            <p>Persiapkan KTP, nomor telepon terdaftar, dan email yang digunakan saat registrasi akun PinjamYuk Anda.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-item">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Hubungi CS via WhatsApp</h3>
+                            <p>Klik tombol WhatsApp di atas atau kirim pesan ke <strong>+62 51-2211-8288</strong>. Sampaikan permintaan penghapusan akun Anda.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-item">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Verifikasi Identitas</h3>
+                            <p>Customer Service akan memverifikasi identitas Anda untuk keamanan data. Ikuti instruksi yang diberikan.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-item">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Proses Penghapusan</h3>
+                            <p>Tim kami akan memproses penghapusan akun Anda dengan cepat. Anda akan menerima konfirmasi ketika proses selesai.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-item">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h3>Konfirmasi Penghapusan</h3>
+                            <p>Pastikan Anda menerima email atau notifikasi konfirmasi bahwa akun telah berhasil dihapus dari sistem.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Info Cards -->
+            <div class="grid">
+                <div class="card fade-in">
+                    <div class="card-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h2>Proses Cepat</h2>
+                    <p>Penghapusan akun diproses dalam waktu 1-3 hari kerja setelah verifikasi data selesai. Tidak ada biaya admin untuk layanan ini.</p>
+                    <div style="background: var(--light); padding: 1rem; border-radius: 12px; margin-top: 1rem;">
+                        <small style="color: var(--gray);"><i class="fas fa-info-circle"></i> Waktu proses dapat bervariasi tergantung beban kerja sistem</small>
+                    </div>
+                </div>
+
+                <div class="card fade-in">
+                    <div class="card-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h2>Keamanan Terjamin</h2>
+                    <p>Data Anda dihapus secara permanen dari server kami sesuai kebijakan privasi dan regulasi OJK. Proses diawasi oleh tim keamanan.</p>
+                    <div style="background: var(--light); padding: 1rem; border-radius: 12px; margin-top: 1rem;">
+                        <small style="color: var(--gray);"><i class="fas fa-shield-alt"></i> Sertifikasi ISO/IEC 27001:2022</small>
+                    </div>
+                </div>
+
+                <div class="card fade-in">
+                    <div class="card-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h2>Dampingi Profesional</h2>
+                    <p>Customer Service kami terlatih untuk menangani permintaan penghapusan akun dengan sopan dan profesional. Tidak ada penolakan tanpa alasan.</p>
+                    <div style="background: var(--light); padding: 1rem; border-radius: 12px; margin-top: 1rem;">
+                        <small style="color: var(--gray);"><i class="fas fa-star"></i> Rating layanan 4.8/5 dari pengguna</small>
+                    </div>
+                </div>
+
+                <div class="card fade-in">
+                    <div class="card-icon">
+                        <i class="fas fa-check-double"></i>
+                    </div>
+                    <h2>Bersih Total</h2>
+                    <p>Seluruh data pribadi, riwayat pinjaman, dan informasi sensitif akan dihapus secara komprehensif dari database kami.</p>
+                    <div style="background: var(--light); padding: 1rem; border-radius: 12px; margin-top: 1rem;">
+                        <small style="color: var(--gray);"><i class="fas fa-trash-alt"></i> Termasuk data backup dan log sistem</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="faq-section fade-in">
+                <h2 style="text-align: center; margin-bottom: 2rem; font-size: 1.75rem;">
+                    <i class="fas fa-question-circle" style="color: var(--primary);"></i> Pertanyaan yang Sering Diajukan
+                </h2>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Apakah ada biaya untuk menghapus akun PinjamYuk?</span>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Tidak ada biaya sama sekali (GRATIS). PinjamYuk tidak mengenakan biaya apapun kepada pengguna atas pelayanan pengaduan dan penghapusan akun sesuai dengan komitmen layanan kami.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Berapa lama waktu yang dibutuhkan untuk menghapus akun?</span>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Proses penghapusan akun membutuhkan waktu 1-3 hari kerja setelah verifikasi data selesai. Anda akan menerima konfirmasi via email atau WhatsApp ketika akun berhasil dihapus.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Apakah data saya benar-benar dihapus permanen?</span>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Ya, seluruh data pribadi Anda akan dihapus secara permanen dari server kami sesuai dengan kebijakan privasi dan regulasi Perlindungan Data Pribadi. Namun, beberapa data transaksi mungkin disimpan dalam jangka waktu tertentu sesuai kewajiban hukum yang berlaku.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Bisakah saya mendaftar lagi setelah menghapus akun?</span>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Ya, Anda dapat mendaftar kembali di kemudian hari dengan nomor telepon yang sama. Namun, riwayat pinjaman sebelumnya tidak akan terhubung dengan akun baru Anda.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Apa yang harus dilakukan jika masih ada pinjaman yang berjalan?</span>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Anda harus melunasi seluruh pinjaman yang masih berjalan terlebih dahulu sebelum dapat menghapus akun. Hubungi Customer Service untuk informasi pelunasan dan penutupan akun.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Bagaimana jika saya lupa password akun?</span>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Tidak masalah. Customer Service kami dapat membantu verifikasi identitas Anda melalui data lain seperti KTP dan nomor telepon terdaftar. Anda tetap dapat melakukan penghapusan akun tanpa perlu login ke aplikasi.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Security Alert -->
+            <div class="alert alert-danger fade-in" style="margin-top: 3rem;">
+                <i class="fas fa-exclamation-circle"></i>
+                <div>
+                    <strong>Waspada Penipuan!</strong> Selalu berhati-hati terhadap pihak yang mengatasnamakan PinjamYuk. Pastikan Anda hanya menghubungi nomor WhatsApp resmi <strong>+62 51-2211-8288</strong>. Jangan pernah memberikan kode OTP atau password kepada siapapun.
+                </div>
+            </div>
+
+            <!-- Success Alert -->
+            <div class="alert alert-success fade-in">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                    <strong>Keamanan Terjamin!</strong> PinjamYuk telah menerapkan Sistem Manajemen Keamanan Informasi ISO/IEC 27001:2022 dan ISO/IEC 9001:2015 untuk memastikan perlindungan data optimal.
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="official-badge">
+                    <i class="fas fa-certificate"></i>
+                    Berizin & Diawasi OJK
+                </div>
+                <h3 style="margin-bottom: 1rem;">PT. Kuaikuai Tech Indonesia</h3>
+                <p style="opacity: 0.8; margin-bottom: 1.5rem;">
+                    Platform peer-to-peer lending resmi yang berizin dan diawasi oleh Otoritas Jasa Keuangan (OJK)<br>
+                    Nomor Izin: KEP-2/D.05/2021
+                </p>
+                
+                <div class="disclaimer">
+                    <strong>Disclaimer:</strong> Website ini dibuat sebagai panduan resmi untuk membantu pengguna menghapus akun PinjamYuk melalui WhatsApp Customer Service resmi. Semua informasi yang tertera adalah channel resmi yang terdaftar di OJK. PinjamYuk berkomitmen untuk memberikan layanan terbaik dan melindungi data pribadi pengguna sesuai dengan regulasi yang berlaku di Indonesia.
+                </div>
+                
+                <p style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.6;">
+                    © 2024 PinjamYuk - Pinjaman Cepat dan Aman. Hak Cipta Dilindungi.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Button -->
+    <a href="https://wa.me/625122118288" class="fab" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <div class="fab-tooltip">Chat CS Sekarang</div>
+
+    <script>
+        // FAQ Toggle
+        function toggleFaq(element) {
+            const answer = element.nextElementSibling;
+            const icon = element.querySelector('.toggle-icon');
+            
+            // Close all other answers
+            document.querySelectorAll('.faq-answer').forEach(item => {
+                if (item !== answer) {
+                    item.classList.remove('active');
+                }
+            });
+            document.querySelectorAll('.toggle-icon').forEach(item => {
+                if (item !== icon) {
+                    item.classList.remove('rotate');
+                }
+            });
+            
+            // Toggle current
+            answer.classList.toggle('active');
+            icon.classList.toggle('rotate');
+        }
+
+        // Scroll Animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px"
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Add parallax effect to background
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallax = document.querySelector('.bg-animation');
+            parallax.style.transform = `translateY(${scrolled * 0.5}px)`;
+        });
+    </script>
+</body>
+</html>
